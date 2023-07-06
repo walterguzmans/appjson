@@ -1,0 +1,285 @@
+{
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "ANGULO DIAZ REICHELL",
+      "correo": "",
+      "gitHub": "Reichellad",
+      "grupo": {
+        "codGrupo": "6",
+        "nombre": "6"
+      },
+      "carne": "20227312090"
+    },
+    {
+      "id": 2,
+      "nombre": "ARRIETA BARRANTES ALESSANDRO",
+      "correo": "",
+      "gitHub": "Len44A",
+      "grupo": {
+        "codGrupo": "5",
+        "nombre": "5"
+      },
+      "carne": "20217321025"
+    },
+    {
+      "id": 3,
+      "nombre": "BARQUERO BOLÍVAR JOSE ANTHONY",
+      "correo": "jose.barquero15@ulatina.net",
+      "gitHub": "Xthoz",
+      "grupo": {
+        "codGrupo": "1",
+        "nombre": "1"
+      },
+      "carne": "20210121919"
+    },
+    {
+      "id": 4,
+      "nombre": "BLANDON SEGURA FERNANDO DANIEL",
+      "correo": "fernando.blandon@ulatina.net",
+      "gitHub": "FerBS3",
+      "grupo": {
+        "codGrupo": "3",
+        "nombre": "3"
+      },
+      "carne": "20227313750"
+    },
+    {
+      "id": 5,
+      "nombre": "CARMONA MENDOZA MARCOS",
+      "correo": "",
+      "gitHub": "marcoscarmona04",
+      "grupo": {
+        "codGrupo": "2",
+        "nombre": "2"
+      },
+      "carne": "20187312550"
+    },
+    {
+      "id": 6,
+      "nombre": "CEDEÑO RODRIGUEZ ABISAI",
+      "correo": "",
+      "gitHub": "abisairguez",
+      "grupo": {
+        "codGrupo": "4",
+        "nombre": "4"
+      },
+      "carne": "20217322490"
+    },
+    {
+      "id": 7,
+      "nombre": "CHAVES OSORIO GONZALO GABRIEL",
+      "correo": "gonzalo.chaves@ulatina.net",
+      "gitHub": "Gonzogg01",
+      "grupo": {
+        "codGrupo": "3",
+        "nombre": "3"
+      },
+      "carne": "20227311980"
+    },
+    {
+      "id": 8,
+      "nombre": "HERRERA TREJOS KEVIN ANDRES",
+      "correo": "",
+      "gitHub": "KevinLab123",
+      "grupo": {
+        "codGrupo": "1",
+        "nombre": "1"
+      },
+      "carne": "20227313431"
+    },
+    {
+      "id": 9,
+      "nombre": "MADRIZ CRUZ XAMIR",
+      "correo": "",
+      "gitHub": "Xamir1807",
+      "grupo": {
+        "codGrupo": "1",
+        "nombre": "1"
+      },
+      "carne": "20227311953"
+    },
+    {
+      "id": 10,
+      "nombre": "MARTINEZ ARCEYUT DANIELA MARIA",
+      "correo": "",
+      "gitHub": "DaniMartinez2",
+      "grupo": {
+        "codGrupo": "4",
+        "nombre": "4"
+      },
+      "carne": "20207320138"
+    },
+    {
+      "id": 11,
+      "nombre": "MENDOZA PANIAGUA ANDREW RASHID",
+      "correo": "",
+      "gitHub": "AndrewMP23",
+      "grupo": {
+        "codGrupo": "5",
+        "nombre": "5"
+      },
+      "carne": "20217321109"
+    },
+    {
+      "id": 12,
+      "nombre": "OLSEN CHAVES CARLOS ABRAHAM",
+      "correo": "carlos.olsen@ulatina.net",
+      "gitHub": "Abraham-Olsen",
+      "grupo": {
+        "codGrupo": "3",
+        "nombre": "3"
+      },
+      "carne": "20227311123"
+    },
+    {
+      "id": 13,
+      "nombre": "PEREZ TORRES JOSHUA ANDRES",
+      "correo": "",
+      "gitHub": "Joshua1629",
+      "grupo": {
+        "codGrupo": "6",
+        "nombre": "6"
+      },
+      "carne": "20227311739"
+    },
+    {
+      "id": 14,
+      "nombre": "RAMIREZ ARAYA ALONSO",
+      "correo": "alonso.ramirez@ulatina.net",
+      "gitHub": "Alonsisho",
+      "grupo": {
+        "codGrupo": "4",
+        "nombre": "4"
+      },
+      "carne": "20217320224"
+    },
+    {
+      "id": 15,
+      "nombre": "TADLAOUI GONZALEZ NABIL",
+      "correo": "",
+      "gitHub": "NabilTG",
+      "grupo": {
+        "codGrupo": "5",
+        "nombre": "5"
+      },
+      "carne": "20227313942"
+    },
+    {
+      "id": 16,
+      "nombre": "URIARTE RUIZ JEFFRY ADRIAN",
+      "correo": "",
+      "gitHub": "JeffryUR",
+      "grupo": {
+        "codGrupo": "2",
+        "nombre": "2"
+      },
+      "carne": "20197320919"
+    },
+    {
+      "id": 17,
+      "nombre": "VALVERDE ACEVEDO JOSE MIGUEL",
+      "correo": "",
+      "gitHub": "JoseMiguel2312",
+      "grupo": {
+        "codGrupo": "2",
+        "nombre": "2"
+      },
+      "carne": "20217311263"
+    },
+    {
+      "id": 18,
+      "nombre": "VARGAS THOMAS YERICK",
+      "correo": "",
+      "gitHub": "yerickpro",
+      "grupo": {
+        "codGrupo": "2",
+        "nombre": "2"
+      },
+      "carne": "20207330595"
+    },
+    {
+      "id": 19,
+      "nombre": "VEGA MATA OSCAR DAVID",
+      "correo": "",
+      "gitHub": "David-Vega-8539",
+      "grupo": {
+        "codGrupo": "5",
+        "nombre": "5"
+      },
+      "carne": "20217321697"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "User 1",
+      "email": "user1@domain.com"
+    },
+    {
+      "id": 2,
+      "nombre": "User 2",
+      "email": "user2@domain.com"
+    },
+    {
+      "id": 3,
+      "nombre": "User 3",
+      "email": "user3@domain.com"
+    },
+    {
+      "id": 4,
+      "nombre": "User 4",
+      "email": "user4@domain.com"
+    },
+    {
+      "id": 6,
+      "nombre": "User 6",
+      "email": "user6@domain.com"
+    },
+    {
+      "id": 5,
+      "nombre": "User 5",
+      "email": "user5@domain.com"
+    },
+    {
+      "id": 7,
+      "nombre": "User 7",
+      "email": "user7@domain.com"
+    },
+    {
+      "id": 8,
+      "nombre": "User 8",
+      "email": "user8888@domain.com"
+    }
+  ],
+  "provincias": [
+    {
+      "id": 1,
+      "provincia": "San José"
+    },
+    {
+      "id": 2,
+      "provincia": "Alajuela"
+    },
+    {
+      "id": 3,
+      "provincia": "Cartago"
+    },
+    {
+      "id": 4,
+      "provincia": "Heredia"
+    },
+    {
+      "id": 5,
+      "provincia": "Guanacaste"
+    },
+    {
+      "id": 6,
+      "provincia": "Puntarenas"
+    },
+    {
+      "id": 3,
+      "provincia": "Limón"
+    }
+  ]
+}
