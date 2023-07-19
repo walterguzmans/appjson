@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Usuario} from 'src/app/core/models/usuario';
 import { UsuariosClass } from 'src/app/core/models/usuarios-class';
 import { UsuariosService } from 'src/app/core/services/usuarios.service';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-lista-usuarios',
@@ -14,7 +15,7 @@ export class ListaUsuariosComponent {
   public vNuevo: UsuariosClass;
   public displayedColumns: string[] = ['id', 'nombre', 'email'];
 
-  constructor(private readonly usuarioSV: UsuariosService) {    
+  constructor(private readonly usuarioSV: UsuariosService, private readonly router: Router) {    
     this.getData();
   }
 
@@ -27,6 +28,10 @@ export class ListaUsuariosComponent {
       error => { },
       () => {}
     )
+  }
+
+  public nuevoUsuario(): void {
+    this.router.navigate(['usuarios/agregar']);
   }
 
 }
