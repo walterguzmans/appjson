@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Usuario} from 'src/app/core/models/usuario';
 import { UsuariosClass } from 'src/app/core/models/usuarios-class';
 import { UsuariosService } from 'src/app/core/services/usuarios.service';
+import { EditarUsuarioComponent } from '../editar-usuario/editar-usuario.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-lista-usuarios',
@@ -12,9 +14,11 @@ import { UsuariosService } from 'src/app/core/services/usuarios.service';
 export class ListaUsuariosComponent {
   public vData: Usuario[];
   public vNuevo: UsuariosClass;
-  public displayedColumns: string[] = ['id', 'nombre', 'email'];
+  public displayedColumns: string[] = ['id', 'nombre', 'email', 'edit', 'delete'];
 
-  constructor(private readonly usuarioSV: UsuariosService) {    
+  constructor(private readonly usuarioSV: UsuariosService, 
+              public dialog: MatDialog
+              ) {    
     this.getData();
   }
 
@@ -27,6 +31,10 @@ export class ListaUsuariosComponent {
       error => { },
       () => {}
     )
+  }
+
+  public editarUsuario(indice: number) {
+    const ventanaEditar = this.dialog.open(EditarUsuarioComponent, data: { id: this.vData[indice].id});
   }
 
 }

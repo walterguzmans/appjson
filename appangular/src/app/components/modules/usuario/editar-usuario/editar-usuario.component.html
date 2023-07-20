@@ -1,0 +1,28 @@
+<div class="container">
+    <h3> Edi usuario</h3>  
+    <form class="mat-dialog-content" (ngSubmit)="submit" #formControl="ngForm">
+        <!--Campo Nombre -->
+        <div class="form">
+            <mat-form-field color="accent">
+                <input matInput #input class="form-control" placeholder="Nombre" 
+                       [(ngModel)]="data.nombre" name="nombre" required>
+                <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <!--Campo Correo -->
+        <div class="form">
+            <mat-form-field color="accent">
+                <input matInput #input class="form-control" placeholder="Correo" 
+                       [(ngModel)]="data.email" name="email" required>
+                <mat-error *ngIf="formControl.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>   
+        
+        <!-- Botones -->
+        <div mat-dialog-actions>
+            <button mat-button type="submit" [disabled]="!formControl.valid"
+                               [mat-dialog-close]="1" (click)="cancelar()">Guardar</button>
+            <button mat-button (click)="cancelar()" tabindex="-1">Cancelar</button>
+        </div>
+    </form>
+</div>
