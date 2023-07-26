@@ -1,40 +1,53 @@
 import { Component } from '@angular/core';
-import { Usuario} from 'src/app/core/models/usuario';
+import { Usuario } from 'src/app/core/models/usuario';
 import { UsuariosClass } from 'src/app/core/models/usuarios-class';
 import { UsuariosService } from 'src/app/core/services/usuarios.service';
 import { EditarUsuarioComponent } from '../editar-usuario/editar-usuario.component';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-lista-usuarios',
   templateUrl: './lista-usuarios.component.html',
-  styleUrls: ['./lista-usuarios.component.scss']
+  styleUrls: ['./lista-usuarios.component.scss'],
 })
-
 export class ListaUsuariosComponent {
   public vData: Usuario[];
   public vNuevo: UsuariosClass;
   public displayedColumns: string[] = ['id', 'nombre', 'email', 'edit', 'delete'];
 
-  constructor(private readonly usuarioSV: UsuariosService, 
-              public dialog: MatDialog
-              ) {    
+  constructor( private readonly usuarioSV: UsuariosService,
+               public dialog: MatDialog)
+  {
     this.getData();
   }
 
   public getData(): void {
-    this.usuarioSV.getUsuarios().subscribe (
-      resp => { 
+    this.usuarioSV.getUsuarios().subscribe(
+      (resp) => {
         this.vData = resp;
         console.log(this.vData);
       },
-      error => { },
+      (error) => {},
       () => {}
-    )
+    );
   }
 
   public editarUsuario(indice: number) {
-    const ventanaEditar = this.dialog.open(EditarUsuarioComponent, data: { id: this.vData[indice].id});
-  }
+    console.log('Editando: ' + indice + ' ' + this.vData[indice].id);
+    const ventanaEditar = this.dialog.open(EditarUsuarioComponent, {
+      data: { id: this.vData[indice].id },
+    });
 
+    ventanaEditar.afterClosed().subscribe( 
+      result => {
+        if (result != 'Cancelar') {
+          this.getData();
+          console.log('Actualizando tabla');
+        }        
+      },
+      error => {},
+      () => {
+      }
+    );
+  }
 }
