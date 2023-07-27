@@ -33,7 +33,6 @@ export class EditarUsuarioComponent {
   }
 
   private getData(id: number) {
-    console.log('getdata' + id)    
     this.usuarioSV.getUsuario(id).subscribe(
       resp => { 
         this.data = resp;
@@ -59,7 +58,6 @@ export class EditarUsuarioComponent {
   }
 
   public cancelar(): void {
-    //this.getData(this.id);
     this.dialogRef.close('Cancelar');
   }
 }

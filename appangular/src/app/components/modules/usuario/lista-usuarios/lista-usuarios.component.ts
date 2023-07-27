@@ -33,7 +33,6 @@ export class ListaUsuariosComponent {
   }
 
   public editarUsuario(indice: number) {
-    console.log('Editando: ' + indice + ' ' + this.vData[indice].id);
     const ventanaEditar = this.dialog.open(EditarUsuarioComponent, {
       data: { id: this.vData[indice].id },
     });
@@ -48,6 +47,20 @@ export class ListaUsuariosComponent {
       error => {},
       () => {
       }
+    );
+  }
+
+  public eliminarUsuario(indice: number){
+//    console.log('Eliminando');
+    this.usuarioSV.deleteUsuario(this.vData[indice].id).subscribe(
+      (resp) => {
+        this.getData();
+        console.log(this.vData);
+      },
+      (error) => {
+        console.log(error);        
+      },
+      () => {}
     );
   }
 }

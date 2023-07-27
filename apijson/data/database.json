@@ -212,21 +212,6 @@
   ],
   "usuarios": [
     {
-      "id": 1,
-      "nombre": "User 1",
-      "email": "user1@domain.com"
-    },
-    {
-      "id": 2,
-      "nombre": "User 2",
-      "email": "user2@domain.com"
-    },
-    {
-      "id": 3,
-      "nombre": "User 3",
-      "email": "user3@domain.com"
-    },
-    {
       "id": 4,
       "nombre": "User 4",
       "email": "user4@domain.com"
