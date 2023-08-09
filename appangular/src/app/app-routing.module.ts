@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {ProvinciasComponent} from './components/provincias/provincias.component'
 
 const routes: Routes = [
  {
@@ -7,7 +8,10 @@ const routes: Routes = [
  },
  { path:'usuarios', loadChildren:() => import('./components/modules/usuario/usuario.module')
          .then(m=> m.UsuarioModule)
- }
+ },
+ {
+  path:'provincias', pathMatch: 'full', component:ProvinciasComponent
+} 
 ];
 
 @NgModule({

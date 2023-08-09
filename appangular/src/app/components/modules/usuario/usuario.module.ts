@@ -12,12 +12,15 @@ import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.componen
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { ProvinciasComponent } from '../../provincias/provincias.component';
 
 @NgModule({
   declarations: [
     ListaUsuariosComponent,
     AddUsuariosComponent,
-    EditarUsuarioComponent
+    EditarUsuarioComponent,
+    ProvinciasComponent,
   ],
   imports: [
     CommonModule,
@@ -30,7 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatDialogModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule          
+    MatSelectModule,
+    ReactiveFormsModule
   ]
 })
 export class UsuarioModule { }

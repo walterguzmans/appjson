@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill">
+  <mat-label>Selecciona Provincia</mat-label>
+  <mat-select [(value)]="selectedValue" (selectionChange)="onSelect()">
+    <mat-option *ngFor="let provincia of vProvincias" [value]="provincia.id">
+      {{ provincia.provincia }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<p>Provincia Seleccionada: {{selectedValue}}</p>

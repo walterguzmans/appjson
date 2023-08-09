@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Usuario } from 'src/app/core/models/usuario';
 import { UsuariosClass } from 'src/app/core/models/usuarios-class';
 import { UsuariosService } from 'src/app/core/services/usuarios.service';
 import { EditarUsuarioComponent } from '../editar-usuario/editar-usuario.component';
+import { ProvinciasComponent } from '../../../provincias/provincias.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -14,6 +15,7 @@ export class ListaUsuariosComponent {
   public vData: Usuario[];
   public vNuevo: UsuariosClass;
   public displayedColumns: string[] = ['id', 'nombre', 'email', 'edit', 'delete'];
+  @ViewChild(ProvinciasComponent) vComboProvincia: ProvinciasComponent;
 
   constructor( private readonly usuarioSV: UsuariosService,
                public dialog: MatDialog)
@@ -58,9 +60,14 @@ export class ListaUsuariosComponent {
         console.log(this.vData);
       },
       (error) => {
-        console.log(error);        
+        console.log(error);
       },
       () => {}
     );
+  }
+
+  public changeProvincia(): void {
+    console.log(this.vComboProvincia.selectedValue);
+
   }
 }
